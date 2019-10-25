@@ -26,7 +26,10 @@ BUILD_TWRP := true
 $(call inherit-product, device/xiaomi/jasmine_sprout/device.mk)
 
 # Inherit some common bootleggers stuff.
+IS_PHONE := true
+TARGET_GAPPS_ARCH := arm64
 $(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
+$(call inherit-product, vendor/gapps/config.mk)
 
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
