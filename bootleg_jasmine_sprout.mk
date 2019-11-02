@@ -44,13 +44,11 @@ BUILD_FINGERPRINT := xiaomi/jasmine/jasmine_sprout:9/PKQ1.180904.001/V10.0.9.0.P
 # Device identifier
 PRODUCT_BRAND := xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
+<<<<<<< HEAD:bootleg_jasmine_sprout.mk
 PRODUCT_PLATFORM := SDM660
 PRODUCT_NAME := bootleg_jasmine_sprout
+=======
+PRODUCT_NAME := lineage_jasmine_sprout
+>>>>>>> 8c2539a... jasmine: remove useless overrides of product name and device:lineage_jasmine_sprout.mk
 PRODUCT_DEVICE := jasmine_sprout
 PRODUCT_MODEL := Mi A2
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE="jasmine_sprout" \
-    PRODUCT_NAME="jasmine"
-
-TARGET_VENDOR_PRODUCT_NAME := jasmine
